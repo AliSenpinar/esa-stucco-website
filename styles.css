@@ -49,6 +49,23 @@ img{ max-width:100%; display:block; }
 }
 .nav-links a:hover{ background: rgba(255,255,255,0.06); color: var(--text); }
 
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 20px;
+  border-radius:12px;
+  background:#C40000;
+  color:#FFFFFF;
+  font-weight:700;
+  border:0;
+  cursor:pointer;
+  text-decoration:none;
+  transition:0.2s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+
 .nav-links .btn{
   display:inline-flex; 
   align-items:center; 
@@ -65,10 +82,10 @@ img{ max-width:100%; display:block; }
   box-shadow: 0 10px 24px rgba(79,124,255,0.25);
 }
 .btn.secondary{
-  background: rgba(255,255,255,0.06);
+  background: #F3F4F6;
   box-shadow: none;
-  border: 1px solid var(--border);
-  color: var(--text);
+  border: 1px solid #E5E7EB;
+  color: #111111;
 }
 .btn:hover{
   background: #A80000; 
@@ -102,11 +119,13 @@ h1{ font-size: clamp(32px, 4vw, 48px); margin: 10px 0 10px; line-height: 1.08; }
 .hero-actions{ display:flex; gap:12px; flex-wrap: wrap; margin-top: 18px; }
 .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 16px; }
 .badge{
-  padding: 8px 12px; border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid var(--border);
-  color: var(--muted);
+  padding: 8px 12px; 
+  border-radius: 999px;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  color: #374151;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .side-card{ padding: 18px; }
@@ -187,6 +206,7 @@ textarea{ min-height: 130px; resize: vertical; }
   color: var(--muted);
 }
 .small{ font-size: 13px; color: var(--muted); }
+
 
 
 
