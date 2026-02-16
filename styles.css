@@ -144,7 +144,37 @@ h1{ font-size: clamp(32px, 4vw, 48px); margin: 10px 0 10px; line-height: 1.08; }
 
 .section{ padding: 26px 0; }
 .section h2{ margin:0 0 10px; font-size: 26px; }
-.section p{ margin: 0 0 16px; color: #374151; line-height: 1.6; }
+
+.guide-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.guide-image{
+  padding: 18px;
+}
+
+.guide-image img{
+  width:100%;
+  border-radius: 12px;
+}
+
+.guide-text{
+  padding: 22px;
+}
+
+.guide-text ul{
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px){
+  .guide-grid{
+    grid-template-columns: 1fr;
+  }
+}
 
 .grid3{
   display:grid; gap: 14px;
