@@ -34,12 +34,15 @@
 
     <div class="hero-grid">
       <div class="card form">
-        <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <form action="https://formspree.io/f/xqedblpz" method="POST">
           <label for="name">Name</label>
           <input id="name" name="name" placeholder="Your name" required />
 
           <label for="phone">Phone</label>
           <input id="phone" name="phone" placeholder="(XXX) XXX-XXXX" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required />
 
           <label for="city">City</label>
           <input id="city" name="city" placeholder="Vaughan / Toronto / etc." />
@@ -50,9 +53,6 @@
           <div style="margin-top:14px;">
             <button class="btn" type="submit">Send Request</button>
           </div>
-          <p class="small" style="margin-top:10px;">
-            Note: This opens your email app. Next we can switch this to a free form service (no email app needed).
-          </p>
         </form>
       </div>
 
