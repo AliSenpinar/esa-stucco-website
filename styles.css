@@ -187,8 +187,17 @@ h1{ font-size: clamp(32px, 4vw, 48px); margin: 10px 0 10px; line-height: 1.08; }
 .feature h3{ margin: 0 0 6px; }
 .feature p{ margin:0; color: var(--muted); line-height: 1.6; }
 
+.gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+
 .gallery{
-  display:grid; gap: 12px;
+  display:grid; 
+  gap: 12px;
   grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 900px){
@@ -296,3 +305,60 @@ textarea{ min-height: 130px; resize: vertical; }
   font-weight:600;
   color: var(--text);
 }
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.lightbox-nav span {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
