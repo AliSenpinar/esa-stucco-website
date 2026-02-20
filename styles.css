@@ -549,3 +549,69 @@ textarea{ min-height: 130px; resize: vertical; }
 
 }
 
+
+
+
+.hero-image {
+  position: relative;
+  height: 85vh;
+  background: url("assets/residential-projects/Job12/RES2.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px auto;
+  width: min(1200, 95%);
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.65) 0%,
+    rgba(0,0,0,0.55) 40%,
+    rgba(0,0,0,0.25) 70%,
+    rgba(0,0,0,0.1) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text .kicker {
+  color: white;
+  opacity: 0.9;
+}
+
+
+.hero-text h1 {
+  color: white;
+}
+
+.hero-text .subhead {
+  color: #e5e5e5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 70vh;
+    text-align: center;
+  }
+
+  .hero-overlay {
+    background: rgba(0,0,0,0.6);
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+}
