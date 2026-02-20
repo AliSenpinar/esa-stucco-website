@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// Lightbox functionality (safe version)
 const images = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -15,40 +16,61 @@ const prevBtn = document.querySelector(".prev");
 
 let currentIndex = 0;
 
-images.forEach((img, index) => {
-  img.addEventListener("click", () => {
-    currentIndex = index;
-    showImage();
-    lightbox.style.display = "flex";
-  });
-});
+if (images.length && lightbox && lightboxImg && closeBtn && nextBtn && prevBtn) {
 
-function showImage() {
-  lightboxImg.src = images[currentIndex].src;
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      currentIndex = index;
+      showImage();
+      lightbox.style.display = "flex";
+    });
+  });
+
+  function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+  };
+
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
+  };
+
+  closeBtn.onclick = () => {
+    lightbox.style.display = "none";
+  };
+
+  lightbox.onclick = (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  };
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") nextBtn.click();
+    if (e.key === "ArrowLeft") prevBtn.click();
+    if (e.key === "Escape") lightbox.style.display = "none";
+  });
+
 }
 
-nextBtn.onclick = () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage();
-};
 
-prevBtn.onclick = () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage();
-};
 
-closeBtn.onclick = () => {
-  lightbox.style.display = "none";
-};
 
-lightbox.onclick = (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
   }
-};
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowRight") nextBtn.click();
-  if (e.key === "ArrowLeft") prevBtn.click();
-  if (e.key === "Escape") lightbox.style.display = "none";
 });
