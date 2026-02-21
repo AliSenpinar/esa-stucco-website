@@ -475,7 +475,32 @@ textarea{ min-height: 130px; resize: vertical; }
   .brand .small {
     font-size: 11px;
   }
+}
 
+
+
+.feature.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature.horizontal .feature-img {
+  flex: 0 0 220px;
+  height: 140px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.feature.horizontal .feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature.horizontal .feature-content {
+  flex: 1;
 }
 
 
@@ -614,4 +639,57 @@ textarea{ min-height: 130px; resize: vertical; }
   .hero-text {
     max-width: 100%;
   }
+}
+
+
+
+.feature-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 0;
+  height: 520px;
+}
+
+.feature-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.feature-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.2)
+  );
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.overlay-content h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.overlay-content p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Subtle hover zoom */
+.feature-overlay:hover img {
+  transform: scale(1.05);
 }
