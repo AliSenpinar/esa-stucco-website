@@ -63,6 +63,7 @@ img{ max-width:100%; display:block; }
   text-decoration:none;
   transition:0.2s ease;
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+  flex-wrap: wrap;
 }
 
 
@@ -82,6 +83,7 @@ img{ max-width:100%; display:block; }
   box-shadow: 0 10px 24px rgba(79,124,255,0.25);
 }
 .btn.secondary{
+  justify-content: center;
   background: #F3F4F6;
   box-shadow: none;
   border: 1px solid #E5E7EB;
@@ -93,8 +95,15 @@ img{ max-width:100%; display:block; }
   transform: translateY(-1px);
 }
 
-.hero{
-  padding: 64px 0 30px;
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url('assets/your-hero-image.jpg') center 30% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .hero-grid{
   display:grid; gap: 22px;
@@ -116,7 +125,14 @@ img{ max-width:100%; display:block; }
 h1{ font-size: clamp(32px, 4vw, 48px); margin: 10px 0 10px; line-height: 1.08; }
 .subhead{ color: var(--muted); font-size: 16px; line-height: 1.55; max-width: 58ch; }
 
-.hero-actions{ display:flex; gap:12px; flex-wrap: wrap; margin-top: 18px; }
+.hero-actions{ 
+  display:flex; 
+  gap:16px; 
+  flex-wrap: wrap; 
+  margin-top: 25px; 
+  justify-content: flex-start;
+  align-items: center;
+}
 .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 16px; }
 .badge{
   padding: 8px 12px; 
@@ -603,8 +619,33 @@ textarea{ min-height: 130px; resize: vertical; }
   align-items: center;
 }
 
+/* DESKTOP DEFAULT */
 .hero-content {
   color: white;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  max-width: 650px;
+
+  /* Left aligned on desktop */
+  text-align: left;
+  margin-left: 60px;     /* gives nice left spacing */
+  margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    text-align: center;   /* center text on mobile */
+    margin: 0 auto;       /* center block */
+    padding: 20px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
 }
 
 .hero-text {
@@ -633,7 +674,11 @@ textarea{ min-height: 130px; resize: vertical; }
   }
 
   .hero-overlay {
-    background: rgba(0,0,0,0.6);
+    background:linear-gradient
+    to top,
+    rgba(0,0,0,0.65) 0%,
+    rgba(0,0,0,0.4) 40%,
+    rgba(0,0,0,0.15) 70%
   }
 
   .hero-text {
@@ -915,4 +960,16 @@ textarea{ min-height: 130px; resize: vertical; }
     grid-template-columns: 1fr;
   }
 
+}
+
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-buttons .btn {
+    width: 80%;
+  }
 }
