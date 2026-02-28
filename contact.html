@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | ESA Stucco LTD</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | ESA Stucco LTD</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="nav">
-  <div class="container nav-inner">
+   <div class="container nav-inner">
     <a class="brand" href="index.html">
       <img src="assets/ESASTUCCOLTDLOGO.png" class="logo-img" alt="ESA Stucco LTD logo">
       <div>
@@ -19,7 +21,8 @@
     </a>
 
 
-     <button class="menu-toggle" aria-label="Toggle menu">
+
+   <button class="menu-toggle" aria-label="Toggle menu">
   ☰
 </button>
 
@@ -28,62 +31,78 @@
       <a href="projects.html">Past Projects</a>
       <a href="stucco-guide.html">Stucco Guide</a>
       <a href="about.html">About</a>
-       <a href="contact1.html">Contact</a>
-      <a href="contact.html" class="btn">Get a Free Quote</a>
+       <a href="contact.html">Contact</a>
+      <a href="quote.html" class="btn">Get a Free Quote</a>
     </nav>
   </div>
 </header>
 
-<main class="container">
-  <section class="section">
-    <h2>Get a free estimate</h2>
-    <p>Send details and (if possible) photos. We’ll get back to you with a quote.</p>
+<main>
 
-    <div class="hero-grid">
-      <div class="card form">
-        <form action="https://formspree.io/f/xqedblpz" method="POST">
-          <label for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" required />
+<section class="contact-hero">
+  <h1>Get In Touch With Us</h1>
+  <p>Professional Exterior Wall Systems Across the GTA</p>
+</section>
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" placeholder="(XXX) XXX-XXXX" />
+<section class="contact-container">
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="your@email.com" required />
+  <div class="contact-info">
 
-          <label for="city">City</label>
-          <input id="city" name="city" placeholder="Vaughan / Toronto / etc." />
-
-          <label for="message">What do you need done?</label>
-          <textarea id="message" name="message" placeholder="Tell us about the job (repairs, new stucco, parging). Include approximate size and any issues."></textarea>
-
-          <div style="margin-top:14px;">
-            <button class="btn" type="submit">Send Request</button>
-          </div>
-        </form>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <div>
+        <h3>Phone</h3>
+        <p><a href="tel:4166699511">(416) 669-9511</a></p>
       </div>
-
-      <aside class="card side-card">
-        <h3>Direct Contact</h3>
-        <div class="info">
-          <div class="info-row">
-            <span>Phone</span>
-            <a href="tel:+14166699511">+1 (416) 669-9511</a>
-          </div>
-          <div class="info-row">
-            <span>Email</span>
-            <a href="mailto:esastucco@hotmail.com">esastucco@hotmail.com</a>
-          </div>
-          <div class="info-row">
-            <span>Service Area</span>
-            <div>The GTA and surrounding areas</div>
-          </div>
-        </div>
-      </aside>
     </div>
-  </section>
+
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:esastucco@hotmail.com">esastucco@hotmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <div>
+        <h3>Address</h3>
+        <p>18 Vedette Way<br>Woodbridge, Ontario</p>
+      </div>
+    </div>
+<!-- 
+    <div class="contact-item">
+      <i class="fab fa-facebook"></i>
+      <div>
+        <h3>Facebook</h3>
+        <p><a href="https://www.facebook.com/share/1FJEAWh3yt/?mibextid=wwXIfr" target="_blank">ESA Stucco LTD</a></p>
+      </div>
+    </div>
+     -->
+
+    <div class="contact-item">
+  <i class="fab fa-instagram"></i>
+  <div>
+    <h3>Instagram</h3>
+    <p>
+      <a href="https://www.instagram.com/esa_stucco_ltd/" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         @esa_stucco_ltd
+      </a>
+    </p>
+  </div>
+</div>
+
+  </div>
+
+</section>
+
 </main>
-  <footer class="site-footer">
+
+
+<footer class="site-footer">
 
   <!-- ===== TOP CONTACT BAR ===== -->
   <div class="footer-top">
