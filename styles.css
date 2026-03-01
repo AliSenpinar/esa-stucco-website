@@ -130,6 +130,52 @@ img{ max-width:100%; display:block; }
 
 
 /* =========================================================
+AREAS WE SERVE
+========================================================= */
+.areas-serve {
+  padding: 60px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.areas-serve h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.areas-subtext {
+  color: #555;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.areas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.areas-grid span {
+  background: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.areas-grid span:hover {
+  background: #a50000; /* your brand red */
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
    BUTTONS
 ========================================================= */
 .btn{
