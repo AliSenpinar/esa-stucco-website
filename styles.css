@@ -950,6 +950,23 @@ h1{
   color: #C13584;
 }
 
+.social-btn-facebook {
+  color: #1877F2;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-btn-facebook i {
+  color: #1877F2;
+  margin-right: 6px;
+  font-size: 22px;
+}
+
+.social-btn-facebook:hover {
+  color: #0c4999;
+}
+
 
 /* =========================================================
    SERVICES PAGE
