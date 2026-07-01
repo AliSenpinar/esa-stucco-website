@@ -1,384 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | ESA Stucco LTD</title>
+  <meta name="description" content="EIFS stucco, mouldings, veneer stone, ACM panel cladding, caulking, repairs, parging, and exterior finishing services by ESA Stucco LTD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
+<header class="topbar">
+  <div class="container nav-wrap">
     <a class="brand" href="index.html">
-      <img src="assets/ESASTUCCOLTDLOGO.png" class="logo-img" alt="ESA Stucco LTD logo">
-      <div>
-        <div>ESA Stucco LTD</div>
-        <div class="small">Exterior Wall Systems</div>
-      </div>
+      <img src="assets/ESALogoWhite.png" alt="ESA Stucco LTD logo" />
+      <div class="brand-text"><strong>ESA STUCCO LTD</strong><span>Exterior Wall Systems</span></div>
     </a>
-
-
-
-   <button class="menu-toggle" aria-label="Toggle menu">
-  ☰
-</button>
-
-<nav class="nav-links">
-      <a href="services.html">Services</a>
-      <a href="projects.html">Past Projects</a>
-      <a href="stucco-guide.html">Stucco Guide</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="quote.html" class="btn">Get a Free Quote</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-page="index" href="index.html">Home</a>
+      <a class="active" data-page="services" href="services.html">Services</a>
+      <a data-page="projects" href="projects.html">Past Projects</a>
+      <a data-page="stucco-guide" href="stucco-guide.html">Stucco Guide</a>
+      <a data-page="about" href="about.html">About</a>
+      <a data-page="contact" href="contact.html">Contact</a>
     </nav>
+    <a class="nav-cta" href="quote.html">Get a Free Quote</a>
+    <button class="mobile-toggle" data-mobile-toggle aria-label="Open menu">☰</button>
+  </div>
+  <div class="container mobile-panel" data-mobile-panel>
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Past Projects</a><a href="stucco-guide.html">Stucco Guide</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="quote.html">Get a Free Quote</a>
   </div>
 </header>
-
-<!---->
-
-<section class="service-section">
-
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/residential-projects/Job5/RES2.jpeg" alt="EIFS Stucco Installation">
-    </div>
-
-    <div class="service-content">
-      <h2>EIFS Stucco Installation</h2>
-      <p>
-        Complete Exterior Insulation Finishing Systems installed with
-        proper insulation boards, mesh reinforcement, base coat, primer,
-        and finish coat. Our EIFS systems improve energy efficiency,
-        durability, and provide a clean modern exterior appearance.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!---->
-
-<section class="service-section alt">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/residential-projects/Job2/RES6.jpeg" alt="Exterior Moulding Installation">
-    </div>
-
-    <div class="service-content">
-      <h2>Moulding Design & Installation</h2>
-      <p>
-        Custom exterior mouldings installed around windows, doors,
-        columns, and architectural features. We focus on sharp edges,
-        symmetry, and precision detailing to enhance curb appeal
-        and elevate the overall appearance of your home.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!---->
-
-<section class="service-section">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/residential-projects/Job25/RES4.jpeg" alt="Exterior Stucco Painting">
-    </div>
-
-    <div class="service-content">
-      <h2>Exterior Painting</h2>
-      <p>
-        Professional exterior painting services for stucco surfaces.
-        We prepare surfaces properly, repair minor imperfections,
-        and apply durable coatings that protect against moisture,
-        UV exposure, and seasonal temperature changes.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-<section class="service-section alt">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/vstone.webp" alt="Veneer Stone Installation">
-    </div>
-
-    <div class="service-content">
-      <h2>Veneer Stone Installation</h2>
-      <p>
-        Decorative veneer stone installation for exterior walls,
-        entrances, columns, and feature areas. Our work adds
-        texture, strength, and timeless architectural character
-        to both residential and commercial properties.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-
-<section class="service-section">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/acmp.jpg" alt="ACM Panel Cladding Installation">
-    </div>
-
-    <div class="service-content">
-      <h2>ACM Panel & Cladding</h2>
-      <p>
-        Professional aluminum composite material (ACM) panel
-        installation for modern residential and commercial
-        exteriors. Clean lines, sleek finishes, and durable
-        cladding systems built to withstand harsh Canadian weather.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-<section class="service-section alt">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/ESFS.png" alt="Stucco Repair Services">
-    </div>
-
-    <div class="service-content">
-      <h2>Eavestrough, Downspout, Leaf Guard, Soffit, Fascia, and Siding</h2>
-      <p>
-        Keep your home protected from water damage with high-quality exterior systems. 
-        We specialize in the installation and repair of eavestroughs, downspouts, soffit, 
-        fascia, and leaf guards to ensure proper drainage and long-term performance.
-
-        Our work not only protects your home from moisture and structural issues but also improves 
-        ventilation and adds a clean, finished look to your exterior. Built with quality materials 
-        and expert installation, our systems are made to last.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-
-<section class="service-section">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/caulkingr.jpg" alt="ACM Panel Cladding Installation">
-    </div>
-
-    <div class="service-content">
-      <h2>Caulking</h2>
-      <p>
-        Ensure your home is properly sealed and protected with expert 
-        caulking services. We seal all critical areas including windows, 
-        doors, joints, and exterior connections to prevent water penetration 
-        and drafts.
-        Our precise application and premium materials provide long-lasting durability, 
-        improved energy efficiency, and a clean, finished look that enhances your home’s exterior.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-
-<section class="service-section alt">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/services/StuccoRepair.jpg" alt="Stucco Repair Services">
-    </div>
-
-    <div class="service-content">
-      <h2>Stucco Repair</h2>
-      <p>
-        Repair of cracks, impact damage, water-related deterioration,
-        and aging stucco surfaces. We carefully blend textures and
-        colours to match existing finishes and restore structural
-        integrity without visible patchwork.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-
-<section class="service-section">
-  <div class="service-container">
-
-    <div class="service-image">
-      <img src="assets/Parg2.jpeg" alt="Foundation Parging Services">
-    </div>
-
-    <div class="service-content">
-      <h2>Parging</h2>
-      <p>
-        Foundation parging that protects exposed concrete from
-        moisture penetration while improving overall appearance.
-        We apply smooth, durable finishes designed to withstand
-        freeze-thaw cycles and seasonal weather changes.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!---->
-
-
-
-<section class="section suppliers">
-  <h2>Materials We Work With</h2>
-  <p>
-    We use trusted, industry-proven materials from leading manufacturers to ensure durability,
-    weather resistance, and long-lasting finishes.
-  </p>
-
-  <div class="supplier-logos">
-    <img src="assets/senergy-logo.webp" alt="Sika materials">
-    <img src="assets/logo_Durock1.png" alt="Durock cement board">
-    <img src="assets/durabond-logo.svg" alt="Durabond products">
-  </div>
-</section>
-
-<div class="supplier-cta">
-    <div style="margin-top:16px;">
-      <a class="btn" href="contact.html">Request a Quote</a>
-    </div>
-    </div>
-  </section>
+<main>
+<section class="hero page-hero bg-grid"><div class="container page-hero-grid"><div><div class="eyebrow">Our Services</div><h1>Complete <span class="highlight">Exterior</span> Solutions</h1><p>High-quality exterior wall finishing and related services built to perform in Canadian conditions. We focus on clean execution, quality materials, and details that last.</p><div class="hero-actions"><a class="btn btn-primary" href="quote.html">Request a Quote</a><a class="btn btn-secondary" href="projects.html">View Past Projects</a></div></div><div class="page-hero-media"><div class="frame"><img src="assets/residential-projects/Job24/RES10.jpeg" alt="ESA Stucco commercial exterior project"></div></div></div></section>
+<section class="section section-light"><div class="container"><div class="eyebrow">What We Offer</div><h2 class="section-title">Our Exterior Services</h2><div class="projects-grid spaced-top"><article class="project-card"><img src="assets/residential-projects/Job5/RES2.jpeg" alt="EIFS Stucco Installation"><div class="content"><h3>EIFS Stucco Installation</h3><p>Complete Exterior Insulation Finishing Systems installed with proper insulation boards, mesh reinforcement, base coat, primer, and finish coat. Our EIFS systems improve energy efficiency, durability, and provide a clean modern exterior appearance.</p></div></article><article class="project-card"><img src="assets/residential-projects/Job2/RES6.jpeg" alt="Moulding Design & Installation"><div class="content"><h3>Moulding Design & Installation</h3><p>Custom exterior mouldings installed around windows, doors, columns, and architectural features. We focus on sharp edges, symmetry, and precision detailing to enhance curb appeal and elevate the overall appearance of your home.</p></div></article><article class="project-card"><img src="assets/residential-projects/Job25/RES4.jpeg" alt="Exterior Painting"><div class="content"><h3>Exterior Painting</h3><p>Professional exterior painting services for stucco surfaces. We prepare surfaces properly, repair minor imperfections, and apply durable coatings that protect against moisture, UV exposure, and seasonal temperature changes.</p></div></article><article class="project-card"><img src="assets/vstone.webp" alt="Veneer Stone Installation"><div class="content"><h3>Veneer Stone Installation</h3><p>Decorative veneer stone installation for exterior walls, entrances, columns, and feature areas. Our work adds texture, strength, and timeless architectural character to both residential and commercial properties.</p></div></article><article class="project-card"><img src="assets/acmp.jpg" alt="ACM Panel & Cladding"><div class="content"><h3>ACM Panel & Cladding</h3><p>Professional aluminum composite material panel installation for modern residential and commercial exteriors. Clean lines, sleek finishes, and durable cladding systems built to withstand harsh Canadian weather.</p></div></article><article class="project-card"><img src="assets/ESFS.png" alt="Roofline, Soffit, Fascia & Siding"><div class="content"><h3>Roofline, Soffit, Fascia & Siding</h3><p>High-quality exterior systems including eavestroughs, downspouts, soffit, fascia, leaf guards, and siding to protect the home from moisture while improving ventilation and appearance.</p></div></article><article class="project-card"><img src="assets/caulkingr.jpg" alt="Caulking"><div class="content"><h3>Caulking</h3><p>Expert caulking for windows, doors, joints, and exterior connections to prevent water penetration, reduce drafts, and improve long-term protection.</p></div></article><article class="project-card"><img src="assets/services/StuccoRepair.jpg" alt="Stucco Repair"><div class="content"><h3>Stucco Repair</h3><p>Repair of cracks, impact damage, water-related deterioration, and aging stucco surfaces. We carefully blend textures and colours to restore structural integrity without visible patchwork.</p></div></article><article class="project-card"><img src="assets/Parg2.jpeg" alt="Parging"><div class="content"><h3>Parging</h3><p>Foundation parging that protects exposed concrete from moisture penetration while improving overall appearance with smooth, durable finishes designed for freeze-thaw conditions.</p></div></article></div></div></section>
+<section class="section"><div class="container"><div class="eyebrow">How We Work</div><h2 class="section-title">Built on Quality, Detail, and Reliability</h2><div class="feature-bar spaced-top"><div class="feature-item"><strong>Built on Trust</strong><p>We do the work the right way, with clean preparation and clear expectations.</p></div><div class="feature-item"><strong>Craftsmanship</strong><p>Attention to detail and finish quality are part of every project we take on.</p></div><div class="feature-item"><strong>Licensed & Insured</strong><p>Professional teams, safe work practices, and a dependable approach to every scope.</p></div><div class="feature-item"><strong>Premium Materials</strong><p>We use trusted products suited to Ontario conditions and long-term performance.</p></div></div></div></section>
+<section class="cta-banner bg-grid"><div class="container cta-wrap"><div><div class="eyebrow">Need Pricing?</div><h2>Tell Us About Your Project.</h2><p class="mb-0">We’ll help you find the right exterior solution for your home, development, or commercial scope.</p></div><div class="inline-actions" style="justify-content:flex-end;"><a class="btn btn-primary" href="quote.html">Get a Free Quote</a></div></div></section>
 </main>
-
-  <footer class="site-footer">
-
-  <!-- ===== TOP CONTACT BAR ===== -->
-  <div class="footer-top">
-    <div class="container footer-top-grid">
-
-      <!-- ADDRESS -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 21s-6-5.33-6-10a6 6 0 1112 0c0 4.67-6 10-6 10z"/>
-            <circle cx="12" cy="11" r="2"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Address</strong>
-          <p>18 Vedette Way<br>Woodbridge, Ontario</p>
-        </div>
-      </div>
-
-      <!-- EMAIL -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="M22 6l-10 7L2 6"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Email</strong>
-          <p><a href="mailto:esastucco@hotmail.com">esastucco@hotmail.com</a></p>
-        </div>
-      </div>
-
-      <!-- PHONE -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 01-2.18 2
-            19.86 19.86 0 01-8.63-3.07
-            19.5 19.5 0 01-6-6
-            19.86 19.86 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72
-            12.84 12.84 0 00.7 2.81
-            2 2 0 01-.45 2.11L8.09 9.91
-            a16 16 0 006 6l1.27-1.27
-            a2 2 0 012.11-.45
-            12.84 12.84 0 002.81.7
-            A2 2 0 0122 16.92z"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Call Us</strong>
-          <p><a href="tel:4166699511">416-669-9511</a></p>
-        </div>
-      </div>
-
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-card">
+      <img src="assets/ESALogoWhite.png" alt="ESA Stucco LTD logo" />
+      <p>Professional stucco, EIFS, and exterior wall finishing services across the GTA and beyond, with commercial capabilities across Canada.</p>
+      <div class="social-links-row"><a href="https://www.instagram.com/esa_stucco_ltd/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61587226256812" target="_blank" rel="noopener">Facebook</a></div>
     </div>
+    <div class="footer-card"><h3>Quick Links</h3><ul class="footer-list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Past Projects</a></li><li><a href="stucco-guide.html">Stucco Guide</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-card"><h3>Core Services</h3><ul class="footer-list"><li>EIFS Stucco Installation</li><li>Moulding Design & Installation</li><li>ACM Panel & Cladding</li><li>Veneer Stone</li><li>Caulking & Repairs</li><li>Exterior Painting & Parging</li></ul></div>
+    <div class="footer-card footer-contact-card"><h3>Contact</h3><p><strong>Ahmet Senpinar</strong><br>Founder/Operator<br><a href="tel:4166699511">416-669-9511</a><br></p><p><strong>Ali Senpinar</strong><br>Project Estimator<br><a href="tel:6475499511">647-549-9511</a><br><a href="mailto:estimating@esastucco.ca">estimating@esastucco.ca</a></p><p class="small">18 Vedette Way, Woodbridge, Ontario</p></div>
   </div>
-
-
-  <!-- ===== MAIN FOOTER ===== -->
-  <div class="footer-main">
-    <div class="container footer-grid">
-
-      <div>
-        <h3>About ESA Stucco LTD</h3>
-        <p>
-          Professional stucco, EIFS, and exterior wall
-          finishing services across the GTA and beyond.
-          Quality workmanship built for long-term durability.
-        </p>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Past Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Our Services</h3>
-        <ul>
-          <li>Stucco Installation</li>
-          <li>EIFS Systems</li>
-          <li>ACM Panels & Cladding</li>
-          <li>Veneer Stone</li>
-          <li>Roofline & Siding</li>
-          <li>Caulking</li>
-          <li>Repairs & Restoration</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- ===== BOTTOM BAR ===== -->
-  <div class="footer-bottom">
-    © 2026 ESA Stucco LTD. All Rights Reserved.
-  </div>
-
+  <div class="container footer-bottom"><span>© 2026 ESA Stucco LTD. All Rights Reserved.</span><span>Serving the GTA & surrounding areas • Commercial work across Canada</span></div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

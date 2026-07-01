@@ -1,195 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | ESA Stucco LTD</title>
+  <title>Get a Free Quote | ESA Stucco LTD</title>
+  <meta name="description" content="Request a free estimate from ESA Stucco LTD for stucco, EIFS, repairs, mouldings, exterior painting, and commercial exterior scopes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
+<header class="topbar">
+  <div class="container nav-wrap">
     <a class="brand" href="index.html">
-      <img src="assets/ESASTUCCOLTDLOGO.png" class="logo-img" alt="ESA Stucco LTD logo">
-      <div>
-        <div>ESA Stucco LTD</div>
-        <div class="small">Exterior Wall Systems</div>
-      </div>
+      <img src="assets/ESALogoWhite.png" alt="ESA Stucco LTD logo" />
+      <div class="brand-text"><strong>ESA STUCCO LTD</strong><span>Exterior Wall Systems</span></div>
     </a>
-
-
-     <button class="menu-toggle" aria-label="Toggle menu">
-  ☰
-</button>
-
-<nav class="nav-links">
-      <a href="services.html">Services</a>
-      <a href="projects.html">Past Projects</a>
-      <a href="stucco-guide.html">Stucco Guide</a>
-      <a href="about.html">About</a>
-       <a href="contact.html">Contact</a>
-      <a href="quote.html" class="btn">Get a Free Quote</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-page="index" href="index.html">Home</a>
+      <a data-page="services" href="services.html">Services</a>
+      <a data-page="projects" href="projects.html">Past Projects</a>
+      <a data-page="stucco-guide" href="stucco-guide.html">Stucco Guide</a>
+      <a data-page="about" href="about.html">About</a>
+      <a class="active" data-page="contact" href="contact.html">Contact</a>
     </nav>
+    <a class="nav-cta" href="quote.html">Get a Free Quote</a>
+    <button class="mobile-toggle" data-mobile-toggle aria-label="Open menu">☰</button>
+  </div>
+  <div class="container mobile-panel" data-mobile-panel>
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Past Projects</a><a href="stucco-guide.html">Stucco Guide</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="quote.html">Get a Free Quote</a>
   </div>
 </header>
-
-<main class="container">
-  <section class="section">
-    <h2>Get a free estimate</h2>
-    <p>Send details and (if possible) photos. We’ll get back to you with a quote.</p>
-
-    <div class="hero-grid">
-      <div class="card form">
-        <form action="https://formspree.io/f/xqedblpz" method="POST">
-          <label for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" required />
-
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" placeholder="(XXX) XXX-XXXX" />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="your@email.com" required />
-
-          <label for="city">City</label>
-          <input id="city" name="city" placeholder="Vaughan / Toronto / etc." />
-
-          <label for="message">What do you need done?</label>
-          <textarea id="message" name="message" placeholder="Tell us about the job (repairs, new stucco, parging). Include approximate size and any issues."></textarea>
-
-          <div style="margin-top:14px;">
-            <button class="btn" type="submit">Send Request</button>
-          </div>
-        </form>
-      </div>
-
-      <aside class="card side-card">
-        <h3>Direct Contact</h3>
-        <div class="info">
-          <div class="info-row">
-            <span>Phone</span>
-            <a href="tel:+14166699511">+1 (416) 669-9511</a>
-          </div>
-          <div class="info-row">
-            <span>Email</span>
-            <a href="mailto:esastucco@hotmail.com">esastucco@hotmail.com</a>
-          </div>
-          <div class="info-row">
-            <span>Service Area</span>
-            <div>The GTA and surrounding areas</div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
+<main>
+<section class="hero page-hero bg-grid"><div class="container page-hero-grid"><div><div class="eyebrow">Request a Free Quote</div><h1>Tell Us About Your <span class="highlight">Project.</span></h1><p>Send us your project details, location, and preferred timeline. Ali Senpinar, Project Estimator, will review your request and follow up.</p></div>
+  <div class="page-hero-media"><div class="frame"><img src="assets/residential-projects/Job5/RES2.jpeg" alt="ESA Stucco exterior project"></div></div></div></section>
+<section class="section section-light"><div class="container contact-grid"><div class="form-card"><div class="eyebrow">Quote Request</div><h2 class="section-title">Project Information</h2><form action="https://formspree.io/f/xqedblpz" method="POST"><div class="form-grid"><div class="input-group"><label for="name">Name</label>
+  <input id="name" name="name" placeholder="Your name" required></div><div class="input-group"><label for="phone">Phone</label><input id="phone" name="phone" placeholder="(XXX) XXX-XXXX"></div><div class="input-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="your@email.com" required></div><div class="input-group"><label for="city">City / Location</label>
+    <input id="city" name="city" placeholder="Vaughan / Toronto / etc."></div><div class="input-group"><label for="projectType">Project Type</label><select id="projectType" name="projectType"><option>Residential Exterior</option><option>Commercial Exterior</option><option>Repairs & Restoration</option><option>EIFS Stucco</option><option>Other</option></select></div><div class="input-group"><label for="timeline">Preferred Timeline</label>
+      <input id="timeline" name="timeline" placeholder="This season, tender deadline, etc."></div></div><div class="input-group"><label for="message">What do you need done?</label><textarea id="message" name="message" placeholder="Tell us about the scope, approximate size, project stage, repairs, etc."></textarea></div><button class="btn btn-primary" type="submit">Send Request</button></form></div><div class="contact-side"><div class="eyebrow">Direct Contacts</div>
+      <h2 class="section-title">Need to Call or Email?</h2><div class="contact-stack"><article class="contact-person"><h3>Ahmet Senpinar</h3><p class="role">Founder/Operator</p><p><a href="tel:4166699511">416-669-9511</a><br></p></article><article class="contact-person"><h3>Ali Senpinar</h3><p class="role">Project Estimator</p><p><a href="tel:6475499511">647-549-9511</a><br><a href="mailto:estimating@esastucco.ca">estimating@esastucco.ca</a>
+      </p></article><article class="contact-person"><h3>Service Coverage</h3><p>Serving the GTA and surrounding areas as well as commercial exterior wall system capabilities across Canada.</p></article></div></div></div></section>
+<section class="section"><div class="container"><div class="eyebrow">What Happens Next?</div><h2 class="section-title">From Inquiry to Project Completion</h2><div class="timeline-grid spaced-top"><article class="timeline-step"><small>01</small><h3>Quick Response</h3><p>We review your inquiry and respond as quickly as possible.</p></article><article class="timeline-step"><small>02</small><h3>Scope Review</h3><p>We assess the property, drawings, photos, or project details.</p></article><article class="timeline-step">
+  <small>03</small><h3>Clear Estimate</h3><p>You receive a straightforward quote with scope and pricing information.</p></article><article class="timeline-step"><small>04</small><h3>Quality Execution</h3><p>Our team completes the work with professionalism and attention to detail.</p></article></div></div></section>
 </main>
-  <footer class="site-footer">
-
-  <!-- ===== TOP CONTACT BAR ===== -->
-  <div class="footer-top">
-    <div class="container footer-top-grid">
-
-      <!-- ADDRESS -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 21s-6-5.33-6-10a6 6 0 1112 0c0 4.67-6 10-6 10z"/>
-            <circle cx="12" cy="11" r="2"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Address</strong>
-          <p>18 Vedette Way<br>Woodbridge, Ontario</p>
-        </div>
-      </div>
-
-      <!-- EMAIL -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="M22 6l-10 7L2 6"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Email</strong>
-          <p><a href="mailto:esastucco@hotmail.com">esastucco@hotmail.com</a></p>
-        </div>
-      </div>
-
-      <!-- PHONE -->
-      <div class="footer-contact-item">
-        <div class="icon-circle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 01-2.18 2
-            19.86 19.86 0 01-8.63-3.07
-            19.5 19.5 0 01-6-6
-            19.86 19.86 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72
-            12.84 12.84 0 00.7 2.81
-            2 2 0 01-.45 2.11L8.09 9.91
-            a16 16 0 006 6l1.27-1.27
-            a2 2 0 012.11-.45
-            12.84 12.84 0 002.81.7
-            A2 2 0 0122 16.92z"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <strong>Call Us</strong>
-          <p><a href="tel:4166699511">416-669-9511</a></p>
-        </div>
-      </div>
-
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-card">
+      <img src="assets/ESALogoWhite.png" alt="ESA Stucco LTD logo" />
+      <p>Professional stucco, EIFS, and exterior wall finishing services across the GTA and beyond, with commercial capabilities across Canada.</p>
+      <div class="social-links-row"><a href="https://www.instagram.com/esa_stucco_ltd/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61587226256812" target="_blank" rel="noopener">Facebook</a></div>
     </div>
+    <div class="footer-card"><h3>Quick Links</h3><ul class="footer-list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Past Projects</a></li><li><a href="stucco-guide.html">Stucco Guide</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-card"><h3>Core Services</h3><ul class="footer-list"><li>EIFS Stucco Installation</li><li>Moulding Design & Installation</li><li>ACM Panel & Cladding</li><li>Veneer Stone</li><li>Caulking & Repairs</li><li>Exterior Painting & Parging</li></ul></div>
+    <div class="footer-card footer-contact-card"><h3>Contact</h3><p><strong>Ahmet Senpinar</strong><br>Founder/Operator<br><a href="tel:4166699511">416-669-9511</a><br></p><p><strong>Ali Senpinar</strong><br>Project Estimator<br><a href="tel:6475499511">647-549-9511</a><br><a href="mailto:estimating@esastucco.ca">estimating@esastucco.ca</a></p><p class="small">18 Vedette Way, Woodbridge, Ontario</p></div>
   </div>
-
-
-  <!-- ===== MAIN FOOTER ===== -->
-  <div class="footer-main">
-    <div class="container footer-grid">
-
-      <div>
-        <h3>About ESA Stucco LTD</h3>
-        <p>
-          Professional stucco, EIFS, and exterior wall
-          finishing services across the GTA and beyond.
-          Quality workmanship built for long-term durability.
-        </p>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Past Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Our Services</h3>
-        <ul>
-          <li>Stucco Installation</li>
-          <li>EIFS Systems</li>
-          <li>ACM Panels & Cladding</li>
-          <li>Veneer Stone</li>
-          <li>Roofline & Siding</li>
-          <li>Caulking</li>
-          <li>Repairs & Restoration</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- ===== BOTTOM BAR ===== -->
-  <div class="footer-bottom">
-    © 2026 ESA Stucco LTD. All Rights Reserved.
-  </div>
-
+  <div class="container footer-bottom"><span>© 2026 ESA Stucco LTD. All Rights Reserved.</span><span>Serving the GTA & surrounding areas • Commercial work across Canada</span></div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
