@@ -942,3 +942,18 @@ textarea { min-height: 150px; resize: vertical; }
     z-index: 9997;
   }
 }
+
+
+/* Mobile quote button alignment fix */
+.mobile-panel .nav-cta,
+.nav-links .btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100%;
+  min-height: 52px;
+  padding: 0.95rem 1rem !important;
+  line-height: 1.1;
+  white-space: normal;
+}
