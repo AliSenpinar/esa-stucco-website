@@ -892,3 +892,53 @@ textarea { min-height: 150px; resize: vertical; }
     width: 100%;
   }
 }
+
+
+
+
+
+/* Mobile menu panel fix */
+.mobile-panel {
+  display: none;
+}
+
+.mobile-panel.open {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 880px) {
+  .mobile-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .mobile-panel {
+    width: 100%;
+    padding: 1rem;
+    background: #08090b;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+  }
+
+  .mobile-panel a {
+    color: #fff;
+    font-weight: 700;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 9997;
+  }
+}

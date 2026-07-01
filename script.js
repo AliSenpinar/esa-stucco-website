@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // =========================
+  // Project image lightbox
+  // =========================
   const images = document.querySelectorAll(".gallery-img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
@@ -50,41 +53,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+  // =========================
+  // Mobile menu - new header
+  // =========================
+  const mobileToggle = document.querySelector("[data-mobile-toggle]");
+  const mobilePanel = document.querySelector("[data-mobile-panel]");
 
-  if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+  if (mobileToggle && mobilePanel) {
+    mobileToggle.addEventListener("click", () => {
+      mobilePanel.classList.toggle("open");
     });
   }
-});
 
+  // =========================
+  // Mobile menu - old project pages
+  // =========================
+  const oldToggle = document.querySelector(".menu-toggle");
+  const oldNavLinks = document.querySelector(".nav-links");
 
+  if (oldToggle && oldNavLinks) {
+    oldToggle.addEventListener("click", () => {
+      oldNavLinks.classList.toggle("active");
+    });
+  }
 
-// Project filter buttons
-document.addEventListener("DOMContentLoaded", () => {
+  // =========================
+  // Project filter buttons
+  // =========================
   const filterButtons = document.querySelectorAll("[data-filter-btn]");
   const projectCards = document.querySelectorAll("[data-project-card]");
 
-  if (!filterButtons.length || !projectCards.length) return;
+  if (filterButtons.length && projectCards.length) {
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedFilter = button.getAttribute("data-filter-btn");
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selectedFilter = button.getAttribute("data-filter-btn");
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
 
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
+        projectCards.forEach((card) => {
+          const category = card.getAttribute("data-category");
 
-      projectCards.forEach((card) => {
-        const category = card.getAttribute("data-category");
-
-        if (selectedFilter === "all" || category === selectedFilter) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
-        }
+          if (selectedFilter === "all" || category === selectedFilter) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
       });
     });
-  });
+  }
 });
